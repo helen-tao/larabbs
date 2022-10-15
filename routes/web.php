@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+try {
+    throw new Exception(seuuuu());
+} catch (Exception $e) {
+    print "something went wrong, caught yah! n";
+} finally {
+    print "this part is always executed n";
+}
