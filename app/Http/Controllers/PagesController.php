@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    function root()
+    public function root()
     {
+        //dd(\Auth::user()->hasVerifiedEmail());
         return view('pages.root');
     }
 }
