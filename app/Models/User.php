@@ -77,4 +77,8 @@ class User extends Authenticatable implements MustVerifyEmail
         $this->unreadNotifications->markAsRead();
     }
 
+    public function isAuthorOf($model)
+    {
+        return $this->id == $model->user_id;
+    }
 }
