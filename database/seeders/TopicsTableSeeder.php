@@ -4,11 +4,11 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Topic;
-//use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class TopicsTableSeeder extends Seeder
 {
-    //use WithoutModelEvents;
+    use WithoutModelEvents;
 
     public function run()
     {
