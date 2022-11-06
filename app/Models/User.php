@@ -23,6 +23,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     use HasRoles;
+    use Traits\ActiveUserHelper;
 
     protected $fillable = [
         'name',
